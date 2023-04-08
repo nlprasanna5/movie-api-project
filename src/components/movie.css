@@ -1,0 +1,141 @@
+body {
+    background-color: aliceblue;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+   
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.movieContainer {
+    background-color: whitesmoke;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    
+
+}
+
+.movieContainer:hover{
+    box-shadow: 0 10px 10px 10px rgba(0,0,0,0.1);
+
+}
+
+.card-img-top{
+    object-fit: cover;
+    height: 300px;
+    width: 300px;  
+}
+
+.imgContainer {
+    display: flex;
+    justify-content: center;
+     
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.formContainer {
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center; */
+    display: flex;
+    gap:0.5rem;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.field {
+    
+    font-size: 1.2rem;
+   
+    /* align-self:center; */
+    
+}
+
+.search {
+    
+    background-color: blueviolet;
+    border: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    /* align-self: center; */
+   
+}
+
+.btn {
+    background-color: blueviolet;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: .5rem;
+    text-align: center;
+
+
+
+}
+
+@media only screen and (max-width: 320px){
+    .formContainer {
+        display: flex;
+        flex-direction: column;
+        gap:0.5rem;
+    }
+
+    h1 {
+        font-size:2rem;
+    }
+
+    .search {
+        padding:.5rem;
+    }
+
+	
+}
+
+@media only screen and (max-width: 375px){
+    .formContainer{
+        padding: 1rem;
+    }
+    h1 {
+        padding:1rem;
+    }
+
+}
+
+@media only screen and (max-width: 425px){
+    .formContainer{
+        display: flex;
+        justify-content: center;
+    }
+    h1 {
+        display: flex;
+        align-self: center;
+    }
+
+}
+
