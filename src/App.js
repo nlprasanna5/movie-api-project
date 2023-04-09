@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './components/movie.css';
+import movieStyle from './components/movie.module.css';
 
 
 const App = () => {
@@ -37,26 +37,26 @@ const App = () => {
       });
   };
   return (
-    <div className='container'>
+    <div className={movieStyle.container}>
 
-      <div className='heading'>
+      <div className={movieStyle.heading}>
         <h1>Search Your Favorite Movie</h1>
-        <form onSubmit={submitHandler} className='formContainer'>
-          <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} className='field' /><br /><br />
-          <input type="submit" value="Search" className='search' />
+        <form onSubmit={submitHandler} className={movieStyle.formContainer}>
+          <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} className={movieStyle.field} /><br /><br />
+          <input type="submit" value="Search" className={movieStyle.search} />
         </form>
       </div>
-      <div className="row" >
+      <div className={movieStyle.row} >
         {data.length >= 1 ? data.map(movie =>
-          <div className="movieContainer" key={movie.imdbID}>
-            <div className="card" style={{ "width": "18rem" }}>
-              <div className='imgContainer'>
-                <img src={movie.Poster} className="card-img-top" alt={movie.Title} />
+          <div className={movieStyle.movieContainer} key={movie.imdbID}>
+            <div className={movieStyle.card} style={{ "width": "18rem" }}>
+              <div className={movieStyle.imgContainer}>
+                <img src={movie.Poster} className={movieStyle.cardImgTop} alt={movie.Title} />
               </div>
 
-              <div className="card-body">
-                <h4 className="card-title">{movie.Title}</h4>
-                <a className="btn btn-primary" onClick={() => download(movie.Poster)}>Download Poster</a>
+              <div className={movieStyle.cardBody}>
+                <h4 className={movieStyle.cardTitle}>{movie.Title}</h4>
+                <a className={movieStyle.btn} onClick={() => download(movie.Poster)}>Download Poster</a>
               </div>
             </div>
           </div>

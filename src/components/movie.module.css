@@ -32,7 +32,7 @@ body {
 
 }
 
-.card-img-top{
+.cardImgTop{
     object-fit: cover;
     height: 300px;
     width: 300px;  
@@ -52,14 +52,12 @@ body {
 }
 
 .formContainer {
-    /* display: flex;
-    flex-direction: column; */
-    /* justify-content: center; */
+    
     display: flex;
     gap:0.5rem;
 }
 
-.card-body{
+.cardBody{
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -69,7 +67,7 @@ body {
     
     font-size: 1.2rem;
    
-    /* align-self:center; */
+    
     
 }
 
@@ -82,8 +80,6 @@ body {
     font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
-    /* align-self: center; */
-   
 }
 
 .btn {
@@ -94,9 +90,6 @@ body {
     font-size: 1rem;
     padding: .5rem;
     text-align: center;
-
-
-
 }
 
 @media only screen and (max-width: 320px){
