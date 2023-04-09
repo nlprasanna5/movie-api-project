@@ -41,6 +41,7 @@ const App = () => {
 
       <div className={movieStyle.heading}>
         <h1>Search Your Favorite Movie</h1>
+        <span>(Such as star wars,game of thrones,batman)</span>
         <form onSubmit={submitHandler} className={movieStyle.formContainer}>
           <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} className={movieStyle.field} /><br /><br />
           <input type="submit" value="Search" className={movieStyle.search} />
